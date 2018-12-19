@@ -3,7 +3,7 @@ mongoose.set("debug", true);
 mongoose.Promise = Promise;
 
 mongoose.connect(
-  process.env.MONGOGB_URI ||
+  process.env.MONGODB_URI ||
   "mongodb://localhost/warbler",
   {
     keepAlive: true,
